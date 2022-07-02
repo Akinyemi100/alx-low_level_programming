@@ -1,33 +1,18 @@
 #include <stdio.h>
 
 /**
-  * main - Prints the numbers from 00 to 99
-  *
-  * Return: Always (Success)
-  */
+ * main - prints the alphabet in lowercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int c, i;
+	char ch;
 
-	c = i = '0';
-
-	for (c = '0'; c <= '9'; c++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		for (i = '0'; i <= '9'; i++)
-		{
-			putchar(c);
-			putchar(i);
-
-			if ((c != '9') || (c == '9' && i != '9'))
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
+		putchar(ch);
 	}
-
 	putchar('\n');
-
 	return (0);
 }
-
