@@ -1,1 +1,1 @@
-Write a program that print _putchar
+Write a program that prints _putchar
